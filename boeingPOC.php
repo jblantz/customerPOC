@@ -332,13 +332,13 @@ if(isset($_SESSION["subject"])) {
     echo '         <ul class="site-options">
 					
 					<li class="visible-md visible-lg login-options">
-									<a href="/shop/login"> Login</a>
+									<a href="https://boeingpoc.ping-eng.com:9031/idp/startSSO.ping?PartnerSpId=testconnect2"> Login</a>
 									</li>
 								<li class="visible-md visible-lg login-options">
 									<a href="/shop/register-flow/"> Register</a>
 									</li>
 										<li class="visible-xs"><a href="#"><i class="material-icons visible-xs">search</i></a></li>
-										<li class="cart-icon"><a href="/shop/login" class="visible-sm visible-md visible-lg visible-xs"></a></li>
+										<li class="cart-icon"><a href="https://boeingpoc.ping-eng.com:9031/idp/startSSO.ping?PartnerSpId=testconnect2" class="visible-sm visible-md visible-lg visible-xs"></a></li>
 									
 							</ul>';
 }
@@ -387,7 +387,7 @@ if(isset($_SESSION["subject"])) {
             <li class="visible-xs">
                   </li>
 					<li class="visible-xs">
-							 <a class="side-menu-login login-options" href="/shop/login">
+							 <a class="side-menu-login login-options" href="https://boeingpoc.ping-eng.com:9031/idp/startSSO.ping?PartnerSpId=testconnect2">
 									  Login</a>
 							 </li>
 							<li class="visible-xs">
