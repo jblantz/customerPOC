@@ -305,18 +305,44 @@ window['adrum-start-time'] = new Date().getTime();
 				</span>
 		</div>
 	</div>
-</form><ul class="site-options">
+</form><?php 
+if(isset($_SESSION["subject"])) {
+    echo '<ul class="site-options drop-options">
+						<li class="nav-options list-items first-drop"><span
+							data-toggle="dropdown" role="button" aria-haspopup="true"
+							aria-expanded="false">
+								<a href="#" class="visible-sm visible-md visible-lg">;' . $_SESSION["subject"] . '</a>
+									</span>
+							<ul class="dropdown-menu">
+								<li class="back-item visible-xs"><i
+									class="material-icons visible-xs arrow">keyboard_arrow_left<a>Back</a></i>
+								</li>
+								<li class="dropdown-items">
+									<div>
+										<ul class="subcategory-container">
+											<li class="dropdown-subitems"><a href="/shop/my-account/account-details" title="My Account">My Account</a></li>
+											<li class="dropdown-subitems sign-out"><a href="/shop/logout"> Sign Out</a>
+												</li>
+										</ul>
+				
+			</div>
+			</li>
+			</ul>';
+} else {
+    echo '         <ul class="site-options">
 					
 					<li class="visible-md visible-lg login-options">
-									<a href="https://boeingpoc.ping-eng.com:9031/sp/startSSO.ping?SpSessionAuthnAdapterId=RefID"> Login</a>
+									<a href="/shop/login"> Login</a>
 									</li>
 								<li class="visible-md visible-lg login-options">
-									<a href="https://shop.boeingservices.com/shop/register-flow/"> Register</a>
+									<a href="/shop/register-flow/"> Register</a>
 									</li>
 										<li class="visible-xs"><a href="#"><i class="material-icons visible-xs">search</i></a></li>
-										<li class="cart-icon"><a href="https://boeingpoc.ping-eng.com:9031/sp/startSSO.ping?SpSessionAuthnAdapterId=RefID" class="visible-sm visible-md visible-lg visible-xs"></a></li>
+										<li class="cart-icon"><a href="/shop/login" class="visible-sm visible-md visible-lg visible-xs"></a></li>
 									
-							</ul>
+							</ul>';
+}
+?>
 				</div>
  	<nav id="main-menu" role="navigation" aria-expanded="false"
    aria-label="Main menu" class="main-menu">
@@ -331,18 +357,46 @@ window['adrum-start-time'] = new Date().getTime();
                <i class="material-icons back-arrow">arrow_back </i>
             </div>
          </a>
-         <ul class="menu-top-options">
+         <?php 
+if(isset($_SESSION["subject"])) {
+    echo '<ul class="menu-top-options">
+            <li class="visible-xs">
+                  </li>
+					<li class="visible-xs open">
+                  <span data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+                     <a href="#" class="side-menu-acct login-options"> Welcome ' . $_SESSION["subject"] . '</a>
+							<i class="material-icons visible-xs">arrow_drop_down</i>
+                  </span>
+                  <ul class="dropdown-menu welc-options">
+                     <li class="dropdown-items"></li>
+                     <div>
+                        <ul class="subcategory-container">
+                           <li class="dropdown-subitems">
+                              <a href="/shop/my-account/account-details" title="My Account">My Account</a></li>
+                           <li class="dropdown-subitems sign-out">
+                              <a href="/shop/logout">
+                                    Sign Out</a>
+                              </li>
+                        </ul>
+                     </div>
+                  </ul>
+               </li>
+            </ul>';
+} else {
+    echo '         <ul class="menu-top-options">
             <li class="visible-xs">
                   </li>
 					<li class="visible-xs">
-							 <a class="side-menu-login login-options" href="https://boeingpoc.ping-eng.com:9031/sp/startSSO.ping?SpSessionAuthnAdapterId=RefID">
+							 <a class="side-menu-login login-options" href="/shop/login">
 									  Login</a>
 							 </li>
 							<li class="visible-xs">
-								<a class="side-menu-acct login-options" href="https://shop.boeingservices.com/shop/register-flow/"> 
+								<a class="side-menu-acct login-options" href="/shop/register-flow/"> 
 									 Register</a>
 								</li>
-						</ul>
+						</ul>';
+}
+?>
       </div>
       <div class="desktop-nav">
 
