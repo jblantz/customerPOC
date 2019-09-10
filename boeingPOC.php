@@ -311,7 +311,7 @@ if(isset($_SESSION["subject"])) {
 						<li class="nav-options list-items first-drop"><span
 							data-toggle="dropdown" role="button" aria-haspopup="true"
 							aria-expanded="false">
-								<a href="#" class="visible-sm visible-md visible-lg">;' . $_SESSION["subject"] . '</a>
+								<a href="#" class="visible-sm visible-md visible-lg">' . $_SESSION["subject"] . '</a>
 									</span>
 							<ul class="dropdown-menu">
 								<li class="back-item visible-xs"><i
@@ -405,8 +405,7 @@ if(isset($_SESSION["subject"])) {
 				<li
 						class="nav-options list-items first-nav ">
 						<span data-toggle="dropdown" role="button" aria-haspopup="true"
-						aria-expanded="false" ><a href="https://shop.boeingservices.com/shop/All-Products/c/000" title="Shop Now">Shop Now</a><i class="material-icons visible-xs">keyboard_arrow_right</i><i
-							class="material-icons visible-sm visible-md visible-lg">arrow_drop_down</i></span>
+						aria-expanded="false" ><a href="https://shop.boeingservices.com/shop/All-Products/c/000" title="Shop Now">Shop Now</a><i class="material-icons visible-xs">keyboard_arrow_right</i></span>
 						<ul class="dropdown-menu">
 							<li class="back-item visible-xs"><i
 								class="material-icons visible-xs arrow">keyboard_arrow_left<a>Back</a></i></li>
@@ -433,8 +432,7 @@ if(isset($_SESSION["subject"])) {
 				<li
 						class="nav-options list-items first-nav ">
 						<span data-toggle="dropdown" role="button" aria-haspopup="true"
-						aria-expanded="false" ><a href="https://shop.boeingservices.com/shop/Software-and-Data/c/100" title="Software &amp; Data">Software &amp; Data</a><i class="material-icons visible-xs">keyboard_arrow_right</i><i
-							class="material-icons visible-sm visible-md visible-lg">arrow_drop_down</i></span>
+						aria-expanded="false" ><a href="https://shop.boeingservices.com/shop/Software-and-Data/c/100" title="Software &amp; Data">Software &amp; Data</a><i class="material-icons visible-xs">keyboard_arrow_right</i></span>
 						<ul class="dropdown-menu">
 							<li class="back-item visible-xs"><i
 								class="material-icons visible-xs arrow">keyboard_arrow_left<a>Back</a></i></li>
@@ -493,8 +491,7 @@ if(isset($_SESSION["subject"])) {
 				<li
 						class="nav-options list-items first-nav ">
 						<span data-toggle="dropdown" role="button" aria-haspopup="true"
-						aria-expanded="false" ><a href="https://shop.boeingservices.com/shop/c/110" title="Training">Training</a><i class="material-icons visible-xs">keyboard_arrow_right</i><i
-							class="material-icons visible-sm visible-md visible-lg">arrow_drop_down</i></span>
+						aria-expanded="false" ><a href="https://shop.boeingservices.com/shop/c/110" title="Training">Training</a><i class="material-icons visible-xs">keyboard_arrow_right</i></span>
 						<ul class="dropdown-menu">
 							<li class="back-item visible-xs"><i
 								class="material-icons visible-xs arrow">keyboard_arrow_left<a>Back</a></i></li>
@@ -554,8 +551,7 @@ if(isset($_SESSION["subject"])) {
 				<li
 						class="nav-options list-items first-nav ">
 						<span data-toggle="dropdown" role="button" aria-haspopup="true"
-						aria-expanded="false" ><a href="https://shop.boeingservices.com/shop/Chemicals-and-Consumables/c/1CNC" title="Chemicals &amp; Consumables">Chemicals &amp; Consumables</a><i class="material-icons visible-xs">keyboard_arrow_right</i><i
-							class="material-icons visible-sm visible-md visible-lg">arrow_drop_down</i></span>
+						aria-expanded="false" ><a href="https://shop.boeingservices.com/shop/Chemicals-and-Consumables/c/1CNC" title="Chemicals &amp; Consumables">Chemicals &amp; Consumables</a><i class="material-icons visible-xs">keyboard_arrow_right</i></span>
 						<ul class="dropdown-menu">
 							<li class="back-item visible-xs"><i
 								class="material-icons visible-xs arrow">keyboard_arrow_left<a>Back</a></i></li>
@@ -643,8 +639,7 @@ if(isset($_SESSION["subject"])) {
 				<li
 						class="nav-options list-items first-nav ">
 						<span data-toggle="dropdown" role="button" aria-haspopup="true"
-						aria-expanded="false" ><a href="https://shop.boeingservices.com/shop/c/120" title="Pilot Supplies">Pilot Supplies</a><i class="material-icons visible-xs">keyboard_arrow_right</i><i
-							class="material-icons visible-sm visible-md visible-lg">arrow_drop_down</i></span>
+						aria-expanded="false" ><a href="https://shop.boeingservices.com/shop/c/120" title="Pilot Supplies">Pilot Supplies</a><i class="material-icons visible-xs">keyboard_arrow_right</i></span>
 						<ul class="dropdown-menu">
 							<li class="back-item visible-xs"><i
 								class="material-icons visible-xs arrow">keyboard_arrow_left<a>Back</a></i></li>
