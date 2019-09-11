@@ -311,6 +311,76 @@ window['adrum-start-time'] = new Date().getTime();
 </form><?php 
 if(isset($_SESSION["subject"])) {
     echo '<ul class="site-options drop-options">
+                        <li class="visible-sm visible-xs search-icon material-icons">
+                            <i class="material-icons">search</i>
+                        </li>
+                        <li class="material-icons cart-icon visible-lg visible-md visible-sm visible-xs>
+                            <a href="/shop/cart">
+                                <i class="material-icons">cart</i>
+                                ::after
+                            </a>
+                        </li>
+                        <li class="nav-options list-items right-app">
+                            <span data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons apps-icon hidden-xs">
+                                    <a href="#">apps</a>
+                                </i>
+                            </span>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-items">
+                                    <div>
+                                        <ul class="subcategory-container">
+                                            <li class="dropdown-header">
+                                                <span>
+                                                    <div class="content">Our Brands</div>
+                                                </span>
+                                            </li>
+                                            <li class="dropdown-subitems">
+                                                <a href="https://www.aviall.com/aviallstorefront" title="Aviall" target="_blank" rel="noopener noreferrer">Aviall</a>
+                                                <a href="https://www.aerdata.com" title="AerData" target="_blank" rel="noopener noreferrer">AerData</a>
+                                                <a href="https://www.ilsmart.com" title="ILS" target="_blank" rel="noopener noreferrer">ILS</a>
+                                                <a href="http://jeppesen.com" title="Jeppesen" target="_blank" rel="noopener noreferrer">Jeppesen</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-options list-items account-circle">
+                            <span data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons account-icon hidden-xs">
+                                    <a href="#">account_circle</a>
+                                </i>
+                            </span>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-items">
+                                    <div>
+                                        <ul class="subcategory-container">
+                                            <li class="dropdown-header">
+                                                <a class="visible-sm visible-md visible-lg" href="#">Welcome ' . $_SESSION["givenName"] . '</a>
+                                                <span>jeremycarrier@hotmail.com</span>
+                                            </li>
+                                            <li class="dropdown-subitems">
+                                                <a href="/shop/my-account/account-details" title="Account Details">Account Details</a>
+                                                <a href="/shop/my-account/aircraft-TailInfo" title="Aircraft Details">Aircraft Details</a>
+                                                <a href="/shop/my-account/update-password" title="Change Password">Change Password</a>
+                                                <a href="/shop/my-account/update-email" title="Change Email">Change Email</a>
+                                                <a href="/shop/my-account/orders" title="Order History">Order History</a>
+                                                <a href="/shop/my-account/subscriptions" title="My Subscriptions">My Subscriptions</a>
+                                                <a href="#" title="My Invoices">My Invoices</a>
+                                                <a href="/shop/my-account/myDevices" title="My Devices">My Devices</a>
+                                            </li>
+                                            <li class="dropdown-subitems sign-out">
+                                                <a href="/shop/logout">Sign Out</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+			</ul>';    
+/*   echo '<ul class="site-options drop-options">
 						<li class="nav-options list-items first-drop"><span
 							data-toggle="dropdown" role="button" aria-haspopup="true"
 							aria-expanded="false">
@@ -330,7 +400,7 @@ if(isset($_SESSION["subject"])) {
 				
 			</div>
 			</li>
-			</ul>';
+			</ul>';*/
 } else {
     echo '         <ul class="site-options">
 					
@@ -1265,24 +1335,6 @@ Computer 6” diameter</div>
 		<script type="text/javascript" src="https://shop.boeingservices.com/shop/_ui/addons/b2bacceleratoraddon/responsive/common/js/acc.orderform.js?v=462"></script>
 		<script type="text/javascript" src="https://shop.boeingservices.com/shop/_ui/addons/b2bacceleratoraddon/responsive/common/js/acc.approval.js?v=462"></script>
 		</body>
-
-<!-- OneTrust Cookies Consent Notice  start -->
-		<script src="https://optanon.blob.core.windows.net/consent/de767261-ec0c-43c0-bc45-5ed0ca4aaa5b.js" type="text/javascript" charset="UTF-8"></script>
-		<script type="text/javascript">
-				var interval=null;
-				$(document).on('ready',function(){
-				interval=setInterval(updateClass,6000);
-				});
-
-				function updateClass(){
-					if($('.optanon-show-settings-popup-wrapper').length){
-						$('.optanon-show-settings-popup-wrapper').css({"height":"30px","bottom":"0px","position":"fixed"});
-						clearInterval(interval);
-					}
-				} 
-		</script>
-			<a class="optanon-show-settings">Cookie Settings</a> 
-		<!-- OneTrust Cookies Settings Notice end -->
 
 </html>
 
