@@ -317,7 +317,6 @@ if(isset($_SESSION["subject"])) {
                         <li class="material-icons cart-icon visible-lg visible-md visible-sm visible-xs>
                             <a href="/shop/cart">
                                 <i class="material-icons">cart</i>
-                                ::after
                             </a>
                         </li>
                         <li class="nav-options list-items right-app">
