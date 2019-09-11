@@ -57,6 +57,7 @@ $responseData = json_decode($response, true);
 // ==============================================================
 
 $subject = $responseData['subject'];
+$giveName = $responseData['givenName'];
 
 //if (empty ($subject)) {
 
@@ -75,6 +76,8 @@ $subject = $responseData['subject'];
 // ==============================================================
 
 $_SESSION['subject'] = $subject;
+$_SESSION['givenName'] = $givenName;
+]
 //}
 
 ?>
@@ -311,7 +314,7 @@ if(isset($_SESSION["subject"])) {
 						<li class="nav-options list-items first-drop"><span
 							data-toggle="dropdown" role="button" aria-haspopup="true"
 							aria-expanded="false">
-								<a href="#" class="visible-sm visible-md visible-lg">' . $_SESSION["subject"] . '</a>
+								<a href="#" class="visible-sm visible-md visible-lg">' . $_SESSION["givenName"] . '</a>
 									</span>
 							<ul class="dropdown-menu">
 								<li class="back-item visible-xs"><i
@@ -364,7 +367,7 @@ if(isset($_SESSION["subject"])) {
                   </li>
 					<li class="visible-xs open">
                   <span data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
-                     <a href="#" class="side-menu-acct login-options"> Welcome ' . $_SESSION["subject"] . '</a>
+                     <a href="#" class="side-menu-acct login-options"> Welcome ' . $_SESSION["givenName"] . '</a>
 							<i class="material-icons visible-xs">arrow_drop_down</i>
                   </span>
                   <ul class="dropdown-menu welc-options">
