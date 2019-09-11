@@ -77,7 +77,7 @@ $givenName = $responseData['givenName'];
 
 $_SESSION['subject'] = $subject;
 $_SESSION['givenName'] = $givenName;
-]
+
 //}
 
 ?>
