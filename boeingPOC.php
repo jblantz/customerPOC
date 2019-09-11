@@ -357,7 +357,7 @@ if(isset($_SESSION["subject"])) {
                                         <ul class="subcategory-container">
                                             <li class="dropdown-header">
                                                 <a class="visible-sm visible-md visible-lg" href="#">Welcome ' . $_SESSION["givenName"] . '</a>
-                                                <span>jeremycarrier@hotmail.com</span>
+                                                <span>' . $_SESSION["subject"] . '</span>
                                             </li>
                                             <li class="dropdown-subitems">
                                                 <a href="/shop/my-account/account-details" title="Account Details">Account Details</a>
