@@ -57,7 +57,7 @@ $responseData = json_decode($response, true);
 // ==============================================================
 
 $subject = $responseData['subject'];
-$giveName = $responseData['givenName'];
+$givenName = $responseData['givenName'];
 
 //if (empty ($subject)) {
 
