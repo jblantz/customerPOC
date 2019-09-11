@@ -314,7 +314,7 @@ if(isset($_SESSION["subject"])) {
                         <li class="visible-sm visible-xs search-icon material-icons">
                             <i class="material-icons">search</i>
                         </li>
-                        <li class="material-icons cart-icon visible-lg visible-md visible-sm visible-xs>
+                        <li class="nav-options list-items right-app>
                             <a href="/shop/cart">
                                 <i class="material-icons">shopping_cart</i>
                             </a>
