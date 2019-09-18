@@ -351,7 +351,7 @@ if(isset($_SESSION["subject"])) {
                                     <a href="#">account_circle</a>
                                 </i>
                             </span>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu" style="max-height=800px">
                                 <li class="dropdown-items">
                                     <div>
                                         <ul class="subcategory-container">
@@ -361,6 +361,7 @@ if(isset($_SESSION["subject"])) {
                                             </li>
                                             <li class="dropdown-subitems">
                                                 <a href="/shop/my-account/account-details" title="Account Details">Account Details</a>
+                                                <a href="https://boeingpoc.ping-eng.com:9031/pf/idprofile.ping?LocalIdentityProfileID=RBSQIwi5KWYN9ZGK" title="Profile Management">Profile Management</a>
                                                 <a href="/shop/my-account/aircraft-TailInfo" title="Aircraft Details">Aircraft Details</a>
                                                 <a href="/shop/my-account/update-password" title="Change Password">Change Password</a>
                                                 <a href="/shop/my-account/update-email" title="Change Email">Change Email</a>
